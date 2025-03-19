@@ -6,7 +6,7 @@ def home():
 @app.route('/hello/')
 def hello_name(name):
    return 'Hello %s!' % name
-@app.route('/')
+@app.route('/pirmais')
 def index():
    return render_template('pirmais.html')
 if __name__ == '__main__':
