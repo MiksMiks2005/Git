@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <body>
-   <div class="about">
+   <div class="tv3zinas">
      <h1>Tv3 zinas</h1>
      <p>Laikam.</p>
      {% extends "layout.html" %}
      {% block content %}
         <div class="about">
           <h1>gadalaiks</h1>
-          <p>Laikam silts.</p>
-          <img src="{{ url_for('static', filename='imagis/weter.jpg') }}"
+          <p>{{ teksts }}</p>
         </div>
       {% endblock %}
   </body>

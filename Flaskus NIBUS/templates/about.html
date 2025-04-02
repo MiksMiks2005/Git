@@ -8,7 +8,11 @@
      {% block content %}
         <div class="about">
           <h1>Par Mani</h1>
-          <p>Labāk Nelasi ja baili.</p>
+          <ul>
+            {% for x in names %}
+                <li>{{ x }}</li>
+            {% endfor %}
+          </ul>
           <img src="{{ url_for('static', filename='imagis/smillin.jpg') }}"
         </div>
       {% endblock %}
