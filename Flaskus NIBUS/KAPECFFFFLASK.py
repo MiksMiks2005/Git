@@ -23,7 +23,7 @@ def home():
 def about():
     return render_template('about.html')
 @app.route('/zinas/')
-def home():
+def zinas():
     return render_template('zinas.html')
 if __name__ == '__main__':
     app.run(debug=True)

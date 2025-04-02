@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Komentāri</title>
+</head>
+<body>
+    <h1>Komentāri</h1>
+    <form action="/com" method="post">
+        <label for="komentars">Pievienot komentāru:</label><br>
+        <input type="text" id="komentars" name="komentars"><br><br>
+        <input type="submit" value="Pievienot">
+    </form>
+    <h2>Esošie komentāri:</h2>
+    <ul>
+        {% for x in comments %}
+            <li>{{ x }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
