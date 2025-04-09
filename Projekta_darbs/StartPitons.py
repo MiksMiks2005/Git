@@ -3,14 +3,14 @@ import requests
 app = Flask(__name__)
 @app.route('/')
 def home():
-    return render_template('home.html')
-@app.route('/about/')
-def about():
+    return render_template('majas.html')
+@app.route('/padzilinati/')
+def padzilinati():
     teksts = []
     with open(r'Flaskus NIBUS\abuut.txt', 'r',encoding='utf-8') as file:
         for line in file:
             teksts.append(line.strip())
-    return render_template('about.html', names=teksts)
+    return render_template('padzilinati.html', names=teksts)
 
 @app.route('/zinas')
 def zinas():
