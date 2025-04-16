@@ -5,13 +5,13 @@
      {% extends "layout.html" %}  
      {% block content %}
         <div class="about">
-          <h1>Par Mani</h1>
+          <h1>Albumi:</h1>
           <ul>
             {% for x in names %}
                 <li>{{ x }}</li>
             {% endfor %}
           </ul>
-          <img src="{{ url_for('static', filename='imagis/smillin.jpg') }}"
+          <img src="{{ url_for('static', filename='imagis/YeatDisc.webp') }}"
         </div>
       {% endblock %}
   </body>
