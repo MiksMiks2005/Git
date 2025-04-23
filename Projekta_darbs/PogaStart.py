@@ -8,9 +8,9 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/zinas')
-def zinas():
-    return render_template('zinas.html')
+@app.route('/Albumi')
+def Albumi():
+    return render_template('Albumi.html')
 if __name__ == '__main__':
     app.run(debug=True)
 

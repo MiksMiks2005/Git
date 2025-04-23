@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <body>
+   <div class="zinas">
+     {% extends "layout.html" %}  
+     {% block content %}
+        <div class="zinas">
+          <h1 style="position: absolute; left: 300px; top: 50px; font-size:65px; ">Albumi:</h1>
+          <p><table style="height: 405px; width: 25.0102%; border-collapse: collapse; border-style: hidden; border-color: black; float: left; position: absolute; left: 200px; top: 180px;" border="5">
+            <tbody>
+            <tr style="height: 18px;">
+            <td style="width: 33.3333%; height: 18px;">
+            <p style="text-align: center;"><strong>Izlai&scaron;anas gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px; text-align: center;">
+            <p><strong>Albuma nosaukums</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px; text-align: center;">
+            <p><strong>Dziesmu skaits</strong></p>
+            </td>
+            </tr>
+            <tr style="height: 18px; text-align: center;">
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2021. gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>Up 2 Me</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>22</strong></p>
+            </td>
+            </tr>
+            <tr style="height: 18px; text-align: center;">
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2022. gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2 Alive</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>20</strong></p>
+            </td>
+            </tr>
+            <tr style="height: 18px; text-align: center;">
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2023. gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>Afterlyfe</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>22</strong></p>
+            </td>
+            </tr>
+            <tr style="height: 18px; text-align: center;">
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2024. gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>2093</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 18px;">
+            <p><strong>24</strong></p>
+            </td>
+            </tr>
+            <tr style="height: 10px; text-align: center;">
+            <td style="width: 33.3333%; height: 10px;">
+            <p><strong>2024. gads</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 10px;">
+            <p><strong>Lyfestyle</strong></p>
+            </td>
+            <td style="width: 33.3333%; height: 10px;">
+            <p><strong>22</strong></p>
+            </td>
+            </tr>
+            </tbody>
+            </table></p>
+            <p2>
+              <p style="position: absolute; left: 32px; top: 650px; font-size:30px; ">&nbsp;Repera <strong>Yeat</strong>&nbsp;populārākā vienu izpildītāju dziesma</p>
+              <p style="position: absolute; left: 40px; top: 700px; font-size:30px; ">ir <strong>If we being r&euml;al</strong> no albuma <strong>2093</strong>.</p>
+            </p2>
+          <ul>
+            {% for x in names %}
+                <li>{{ x }}</li>
+            {% endfor %}
+          </ul>
+          <img src="static\imagis\YeatDisc.webp" style="position: absolute; left: 500px; top: 50px;">
+        </div>
+      {% endblock %}
+  </body>
+</html>
