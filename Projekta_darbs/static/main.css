@@ -107,3 +107,24 @@ body.home-page div.home {
   padding: 20px;
   border-radius: 6px;
 }
+  body.home-page div.home h1,
+  body.home-page div.home table,
+  body.home-page div.home strong {
+  color: #e0dddd !important; 
+}
+body.albumi-page {
+  background-image: url('/static/imagis/Yeats.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e0dddd; 
+}
+body.albumi-page div.albumi {
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 20px; 
+  border-radius: 6px; 
+}
+body.albumi-page div.albumi h1,
+body.albumi-page div.albumi table,
+body.albumi-page div.albumi strong {
+  color: #e0dddd !important; 
