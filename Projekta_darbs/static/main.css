@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e0dddd;
+    { min-width: 980px; text-align: center; }
+    { width: 980px; margin: 0 auto; text-align: left; }
   }
   /*
    * Formatting the header area
@@ -64,14 +66,44 @@ body {
   .menu {
     float: right;
     margin-top: 8px;
+    margin-right: 20px;
   }
   .menu li {
     display: inline;
   }
   .menu li + li {
-    margin-left: 60px;
+    margin-left: 50px;
   }
   .menu li a {
     color: #ffffff;
     text-decoration: none;
   }
+  body.about-page {
+    background-image: url('/static/imagis/Yeats.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #e0dddd; 
+}
+body.about-page div.about {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px; 
+    border-radius: 6px; 
+}
+body.about-page div.about h1,
+body.about-page div.about table,
+body.about-page div.about strong {
+    color: #e0dddd !important; 
+}
+body.home-page {
+  background-image: url('/static/imagis/Yeats.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #e0dddd;
+}
+body.home-page div.home {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 6px;
+}

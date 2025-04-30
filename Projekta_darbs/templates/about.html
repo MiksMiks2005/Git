@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
-  <body>
-   <div class="about">
-     {% extends "layout.html" %}  
-     {% block content %}
+  <body class="about-page">
+    <div class="about">
+      {% extends "layout.html" %}  
+      {% block content %}
         <div class="about">
-          <h1 style="position: absolute; left: 300px; top: 50px; font-size:65px; ">Albumi:</h1>
-      
-          <ul>
-            {% for x in names %}
-                <li>{{ x }}</li>
-            {% endfor %}
-          </ul>
-          <img src="static\imagis\YeatAfter.jpg; position: absolute; left: 300px; top: 50px; font-size:65px">
+          <h1 style="position: absolute; left: 340px; top: 65px; font-size:60px; color: white;">Diskogrāfija:</h1>
+          <table style="width: 70%; border-collapse: collapse; font-size:28px; margin-top:80px; margin-left:5px; color: white;">
+            <tbody>
+              <tr>
+                <td>
+                  <p style="text-align: center;">Noa Olivjē Smits (dzimis 2000. gada 26. februārī), profesionāli pazīstams kā Yeat . Viņš ir amerikāņu reperis, dziedātājs, dziesmu autors un ierakstu producents. Viņš ir pazīstams ar savu eksperimentālo skanējumu, jo īpaši dusmu skaņu, unikālu vārdu izvēli un netradicionālu modes izjūtu, kas ietver dizaineru zīmolu un balaklavu sajaukumu.</p>
+                  <p style="text-align: center;">Yeats kļuva pazīstams 2021. gada vidū pēc sava miksteipa 4L
+                    un debijas studijas albuma Up 2 Me izdošanas, un pēdējā ieraksti “Money So Big” un “Get Busy” ieguva ievērojamu popularitāti vietnē TikTok. 2022. gadā viņš izdeva savu otro studijas albumu: 2 Alive un EP Lyfe, un abi projekti debitēja Billboard 200 labāko desmitniekā.2023. gadā viņš izdeva savu trešo studijas albumu Afterlyfe, kas debitēja Billboard 200 ceturtajā vietā, kļūstot par viņa pirmo albumu, kas sasniedza labāko piecinieku, un tika iekļauts dziesmā "IDGAF"; skaņdarbs debitēja Billboard Hot 100 otrajā vietā un Global 200 pirmajā vietā. 2024. gadā Jeits izdeva savu ceturto un piekto studijas albumu: 2093 (februārī) un Lyfestyle (oktobrī). 2093 debitēja un ieguva otro vietu, savukārt Lyfestyle debitēja un ieņēma pirmo vietu Billboard 200, pēdējais bija viņa pirmais albums ar pirmo numuru.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <img src="{{ url_for('static', filename='imagis/Yeat.webp') }}" width="500" style="position: absolute; left: 1300px; top: 250px;">        
         </div>
       {% endblock %}
+    </div>
   </body>
 </html>
