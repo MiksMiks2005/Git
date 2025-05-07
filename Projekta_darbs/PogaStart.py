@@ -12,7 +12,7 @@ def about():
 def Albumi():
     return render_template('Albumi.html')
 @app.route('/Veikals')
-def Albumi():
+def Veikals():
     return render_template('Veikals.html')
 if __name__ == '__main__':
     app.run(debug=True)
