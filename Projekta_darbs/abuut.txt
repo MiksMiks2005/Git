@@ -1,1 +1,1 @@
-Caars Miks dzimis 189754198 gadā un izveidoja Latviju 1912 gadā. Kopā ar Miku , Cars Miks IZveidoja Zečpospolitu.
+ <img src="{{ url_for('static', filename='imagis/Yeat.webp') }}" width="500" style="position: absolute; left: 1300px; top: 250px;">   
